@@ -3,7 +3,7 @@ import React from 'react';
 
 //props só se usa para leitura
 const App = ({name, lastname}) => {
-  //O código nao quer pegar o lastname
+  //O código nao quer pegar o lastname 
   console.log(name, lastname)
    return(
      <div>

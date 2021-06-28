@@ -1,17 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
+import Root from './Root';
 //const que usa {} serve pra "desestructurar" a mesma
-const person = {name: "Simone", lastName: "Santos"};
+//const person = {name: "Simone", lastName: "Santos"};
 
 //document.getElementById injeta o HMTL na div root que está na pasta public index.html
 ReactDOM.render(
   <React.StrictMode>
-    <App />
-    <App name={person.name} lastName={person.lastName}/>
-    <App person={person}/>
+    <Root />
   </React.StrictMode>,
   document.getElementById('root')
 );
