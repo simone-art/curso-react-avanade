@@ -11,6 +11,7 @@ ReactDOM.render(
   <React.StrictMode>
     <App />
     <App name={person.name}  lastName={person.lastName}/>
+    <App person={person}/>
   </React.StrictMode>,
   document.getElementById('root')
 );
