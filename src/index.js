@@ -10,7 +10,7 @@ const person = {name: "Simone", lastName: "Santos"};
 ReactDOM.render(
   <React.StrictMode>
     <App />
-    <App name={person.name}  lastName={person.lastName}/>
+    <App name={person.name} lastName={person.lastName}/>
     <App person={person}/>
   </React.StrictMode>,
   document.getElementById('root')
