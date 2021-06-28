@@ -10,6 +10,7 @@ import {
 
 import Home from './pages/Home';
 import About from './pages/About';
+import { Redirect } from "react-router-dom/cjs/react-router-dom.min";
 
 const Root = () => {
  return(
@@ -17,6 +18,7 @@ const Root = () => {
      <Switch>
          <Route exact path = "/"  component={Home}/>
          <Route exact path = "/about"  component={About}/>
+         <Redirect to= "/about" />
      </Switch>
      </BrowserRouter>
     ) 
